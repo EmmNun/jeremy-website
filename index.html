@@ -2,53 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jer Graphic Designer</title>
+    <title>Jeremy Ortiz Portfolio</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <h2>Jer Graphic Designer</h2>
+<!-- HERO -->
+<section class="hero" id="home">
 
-            <ul>
-                <li><a href="#about">Get To Know Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="topbar">
+        <h2>Jeremy Ortiz</h2>
+    </div>
 
-    <section class="hero">
-        <div class="overlay">
-            <h1>Creative Graphic Designer</h1>
-            <p>Transforming ideas into impactful visual experiences.</p>
-        </div>
-    </section>
+    <div class="hero-content">
+        <h1>Creative Graphic Designer</h1>
+        <p>Transforming ideas into impactful visual experiences.</p>
+    </div>
 
-    <section class="experience">
+    <nav class="hero-nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">Get To Know Me</a>
+        <a href="#company">Company</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <div class="card">
-            <h3>7+</h3>
-            <p>Years of Professional Experience</p>
-        </div>
+</section>
 
-        <div class="card">
-            <h3>Companies</h3>
-            <p>
-                Nike<br>
-                Adidas<br>
-                Creative Studio<br>
-                Marketing Agency
-            </p>
-        </div>
+<!-- ABOUT -->
+<section id="about" class="section blue">
+    <h2>Get To Know Me</h2>
+    <p>Text about your experience...</p>
+</section>
 
-        <div class="card">
-            <img src="profile.jpg" alt="Profile">
-        </div>
+<!-- PROJECTS -->
+<section id="projects" class="section white">
+    <h2>Projects</h2>
+</section>
 
-    </section>
+<!-- COMPANY -->
+<section id="company" class="section red">
+    <h2>Company</h2>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section black">
+    <h2>Contact</h2>
+</section>
+
+<!-- JS (IMPORTANTE: no final do body) -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const sections = document.querySelectorAll(".section");
+
+    function revealSections() {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+
+            if (sectionTop < triggerBottom) {
+                section.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealSections);
+    revealSections();
+
+});
+</script>
 
 </body>
 </html>
