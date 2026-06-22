@@ -1,0 +1,78 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* Branco */
+    color: #000000; /* Preto */
+}
+
+/* Seção de Destaque (Topo) com Imagem de Fundo */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
+    height: 100vh; /* Ocupa a tela inteira ao entrar */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff; /* Texto branco no topo */
+}
+
+/* Barra de Navegação */
+.navbar {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo dos Botões */
+.btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s, background 0.2s;
+    color: #ffffff;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Cores específicas dos botões */
+.btn-blue {
+    background-color: #0056b3; /* Azul */
+}
+
+.btn-red {
+    background-color: #dc3545; /* Vermelho */
+}
+
+.btn-black {
+    background-color: #111111; /* Preto */
+    border: 1px solid #ffffff;
+}
+
+/* Texto centralizado no topo */
+.hero-text {
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: 20vh;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
