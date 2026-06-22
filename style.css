@@ -1,78 +1,101 @@
-/* Configurações Gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-body {
-    background-color: #ffffff; /* Branco */
-    color: #000000; /* Preto */
+body{
+    background:white;
 }
 
-/* Seção de Destaque (Topo) com Imagem de Fundo */
-.hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
-    height: 100vh; /* Ocupa a tela inteira ao entrar */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff; /* Texto branco no topo */
+header{
+    background:black;
+    padding:20px 60px;
 }
 
-/* Barra de Navegação */
-.navbar {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.nav-buttons {
-    display: flex;
-    gap: 20px;
+nav h2{
+    color:white;
 }
 
-/* Estilo dos Botões */
-.btn {
-    text-decoration: none;
-    padding: 12px 24px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: transform 0.2s, background 0.2s;
-    color: #ffffff;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
-.btn:hover {
-    transform: scale(1.05);
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
 }
 
-/* Cores específicas dos botões */
-.btn-blue {
-    background-color: #0056b3; /* Azul */
+nav a:hover{
+    color:#ff0000;
 }
 
-.btn-red {
-    background-color: #dc3545; /* Vermelho */
+/* HERO */
+
+.hero{
+    height:90vh;
+    background-image:url("background.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
 }
 
-.btn-black {
-    background-color: #111111; /* Preto */
-    border: 1px solid #ffffff;
+.overlay{
+    background:rgba(0,0,0,0.55);
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
 }
 
-/* Texto centralizado no topo */
-.hero-text {
-    text-align: center;
-    margin-bottom: auto;
-    margin-top: 20vh;
+.overlay h1{
+    font-size:60px;
+    margin-bottom:20px;
 }
 
-.hero-text h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.overlay p{
+    font-size:22px;
+}
+
+/* EXPERIENCE SECTION */
+
+.experience{
+    margin-top:-70px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.card h3{
+    color:#0047AB;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
 }
