@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeremy Ortiz — Graphic Design / Print / Wrap</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <div class="logo">YOUR NAME</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="company.html">Company</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <nav class="site-nav">
+    <div class="nav-name">JEREMY <span>ORTIZ</span></div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<section class="hero">
+  <section class="hero">
+    <div class="hero-left">
+      <div class="rhombus-field">
+        <span class="rhombus r1"></span>
+        <span class="rhombus r2"></span>
+        <span class="rhombus r3"></span>
+        <span class="rhombus r4"></span>
+        <span class="rhombus r5"></span>
+      </div>
+      <p class="eyebrow">New York, NY</p>
+      <div class="headline-wrap">
+        <h1 class="headline">Graphic<br><span class="accent">Design</span></h1>
+      </div>
+      <p class="tagline">Print<span class="sep">·</span><span class="mid">Art Design</span><span class="sep">·</span>Wrapping</p>
+      <a href="contact.html" class="hero-cta">Start a project →</a>
+    </div>
 
-  <div>
-    <h1>GRAPHIC<br>DESIGN</h1>
-    <button onclick="location.href='projects.html'">VIEW WORK</button>
-  </div>
+    <div class="hero-right">
+      <div class="photo-stack">
+        <div class="layer blue"></div>
+        <div class="layer red"></div>
+        <div class="layer photo">
+          <!-- REPLACE: swap src below for Jeremy's real headshot, e.g. images/jeremy.jpg -->
+          <img src="images/placeholder-headshot.jpg" alt="Jeremy Ortiz portrait placeholder">
+        </div>
+        <span class="photo-caption">Jeremy Ortiz</span>
+      </div>
+    </div>
+  </section>
 
-  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
+  <section class="services reveal">
+    <div class="service-card reveal-delay-1">
+      <h3>Printing</h3>
+      <p>High-detail large-format and small-run printing tuned for color accuracy and finish.</p>
+    </div>
+    <div class="service-card reveal-delay-2">
+      <h3>Wrapping</h3>
+      <p>Vehicle, signage, and surface wraps installed clean, with zero bubbling, every time.</p>
+    </div>
+    <div class="service-card reveal-delay-3">
+      <h3>Art Direction</h3>
+      <p>Concept-to-finish design across brand identity, packaging, and environmental graphics.</p>
+    </div>
+  </section>
 
-  <div class="shape red" style="top:120px; left:40%"></div>
-  <div class="shape blue" style="bottom:120px; left:10%"></div>
-  <div class="shape fill" style="bottom:80px; right:20%"></div>
+  <footer class="site-footer">
+    <span><span class="foot-name">Jeremy Ortiz</span> — Graphic Design Studio</span>
+    <span>© 2026. All rights reserved.</span>
+  </footer>
 
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>

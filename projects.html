@@ -1,46 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Jeremy Ortiz</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <div class="logo">YOUR NAME</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="company.html">Company</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <nav class="site-nav">
+    <div class="nav-name">JEREMY <span>ORTIZ</span></div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<div class="container">
+  <section class="gallery-hero reveal">
+    <h1>Selected <span class="accent">Work</span></h1>
+    <p>Print, wrap, and design projects. Drop your own photos into the /images folder and swap the src attributes below.</p>
+  </section>
 
-  <h2>Projects</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200">
-      <h3>Project 1</h3>
+  <section class="slider">
+    <div class="slide active">
+      <!-- REPLACE: images/work-1.jpg -->
+      <img src="images/placeholder-work-1.jpg" alt="Project 1 placeholder">
+      <div class="caption">
+        <h3>Vehicle <span class="accent">Wrap</span></h3>
+        <p>Full van wrap — color-matched gradient and brand lockup.</p>
+      </div>
     </div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200">
-      <h3>Project 2</h3>
+    <div class="slide">
+      <!-- REPLACE: images/work-2.jpg -->
+      <img src="images/placeholder-work-2.jpg" alt="Project 2 placeholder">
+      <div class="caption">
+        <h3>Storefront <span class="accent">Signage</span></h3>
+        <p>Large-format print, mounted and installed on-site.</p>
+      </div>
     </div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200">
-      <h3>Project 3</h3>
+    <div class="slide">
+      <!-- REPLACE: images/work-3.jpg -->
+      <img src="images/placeholder-work-3.jpg" alt="Project 3 placeholder">
+      <div class="caption">
+        <h3>Packaging <span class="accent">Design</span></h3>
+        <p>Concept-to-print packaging system for a retail line.</p>
+      </div>
     </div>
 
-  </div>
+    <div class="slide">
+      <!-- REPLACE: images/work-4.jpg -->
+      <img src="images/placeholder-work-4.jpg" alt="Project 4 placeholder">
+      <div class="caption">
+        <h3>Event <span class="accent">Graphics</span></h3>
+        <p>Booth wraps and floor decals for a two-day activation.</p>
+      </div>
+    </div>
 
-</div>
+    <div class="slider-controls">
+      <button class="slider-prev" aria-label="Previous">‹</button>
+      <button class="slider-next" aria-label="Next">›</button>
+    </div>
+  </section>
 
+  <footer class="site-footer">
+    <span><span class="foot-name">Jeremy Ortiz</span> — Graphic Design Studio</span>
+    <span>© 2026. All rights reserved.</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

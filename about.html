@@ -1,34 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Jeremy Ortiz</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <div class="logo">YOUR NAME</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="company.html">Company</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <nav class="site-nav">
+    <div class="nav-name">JEREMY <span>ORTIZ</span></div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<div class="container">
+  <!-- background pattern here stands in for a real photo of Jeremy's printing/wrapping work -->
+  <section class="about-hero">
+    <div class="content reveal">
+      <p class="label">About the studio</p>
+      <h1>Built on <span class="accent">print</span>, <span class="accent">wrap</span> &amp; craft</h1>
+      <p class="note">Background: swap the CSS pattern in style.css (.about-hero) for a real photo of Jeremy's work, e.g. background-image: url('images/work-bg.jpg');</p>
+    </div>
+  </section>
 
-  <h2>About Me</h2>
+  <section class="about-body">
+    <div class="about-photo reveal">
+      <!-- REPLACE: swap src for Jeremy's real photo -->
+      <img src="images/placeholder-headshot.jpg" alt="Jeremy Ortiz portrait placeholder">
+    </div>
+    <div class="about-text reveal reveal-delay-1">
+      <h2>My name is <span class="accent">Jeremy Ortiz</span></h2>
+      <p>I'm 25 years old and from New York. For the past 7 years I've worked in wrapping, printing, and art design, using a range of tools and techniques to deliver the best possible result for every client.</p>
+      <p>Every project starts with the same question: what does this surface, space, or brand actually need to say? From there it's concept, material, and craft — print runs, vehicle wraps, signage, and custom art direction, all built to hold up close-up and at a distance.</p>
+      <div class="stat-row">
+        <div class="stat"><div class="num">7+</div><div class="lbl">Years experience</div></div>
+        <div class="stat"><div class="num">100+</div><div class="lbl">Projects delivered</div></div>
+        <div class="stat"><div class="num">NY</div><div class="lbl">Based &amp; working</div></div>
+      </div>
+    </div>
+  </section>
 
-  <p>
-    I am a graphic designer focused on bold visuals, branding, and modern digital identity.
-    My style combines geometric shapes, strong contrast, and clean minimal layouts.
-    <br><br>
-    I work with brands to create powerful visual storytelling that stands out in modern media.
-  </p>
+  <footer class="site-footer">
+    <span><span class="foot-name">Jeremy Ortiz</span> — Graphic Design Studio</span>
+    <span>© 2026. All rights reserved.</span>
+  </footer>
 
-</div>
-
+  <script src="script.js"></script>
 </body>
 </html>
