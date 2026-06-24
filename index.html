@@ -1,85 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Jeremy Ortiz</title>
-
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HERO -->
-<section class="hero" id="home">
+<nav>
+  <div class="logo">YOUR NAME</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="company.html">Company</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-    <div class="topbar">
-        <h2>Jeremy Ortiz</h2>
-    </div>
+<section class="hero">
 
-    <div class="hero-content">
-        <h1>Creative Graphic Designer</h1>
-        <p>Transforming ideas into impactful visual experiences.</p>
-    </div>
+  <div>
+    <h1>GRAPHIC<br>DESIGN</h1>
+    <button onclick="location.href='projects.html'">VIEW WORK</button>
+  </div>
 
-    <nav class="hero-nav">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">Get To Know Me</a>
-        <a href="#company">Company</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
+
+  <div class="shape red" style="top:120px; left:40%"></div>
+  <div class="shape blue" style="bottom:120px; left:10%"></div>
+  <div class="shape fill" style="bottom:80px; right:20%"></div>
 
 </section>
-
-<!-- ABOUT -->
-<section id="about" class="section blue">
-    <h2>Get To Know Me</h2>
-    <p>Text about your experience...</p>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section white">
-    <h2>Projects</h2>
-</section>
-
-<!-- COMPANY -->
-<section id="company" class="section red">
-    <h2>Company</h2>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section black">
-    <h2>Contact</h2>
-</section>
-
-<!-- JS (IMPORTANTE: no final do body) -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-    const sections = document.querySelectorAll(".section");
-
-    function revealSections() {
-        const triggerBottom = window.innerHeight * 0.85;
-
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-
-            if (sectionTop < triggerBottom) {
-                section.classList.add("show");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", revealSections);
-    revealSections();
-
-});
-</script>
 
 </body>
 </html>
